@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Agendamento - Barbearia Top Style</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
-</head>
-<body>
-
-  <header>
-    <div class="container" style="text-align: center;">
-    <div class="logo" style="margin: 0 auto;">
-      <img src="./Imagens/logo.png" alt="Logo Barbearia Top Style" style="width: 80px;" />
-    </div>
-    <h1 style="margin: 10px 0;">Mauro Cortes</h1>
-    </div>
-    <nav>
-    <ul style="list-style: none; padding: 0; display: flex; gap: 10px; margin: 10px 0; justify-content: center; align-items: center;">
-      <li><a href="index.html" style="text-decoration: none;">Sobre Nós</a></li>
-      <li><a href="contact.html" style="text-decoration: none;">Contato</a></li>
-      <li><a href="catalog.html" style="text-decoration: none;">Catálogo</a></li>
-    </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="agendamento">
-      <div class="container">
-        <h2>Agende seu horário</h2>
-        <form id="form-agendamento">
-          <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-          </div>
-
-          <div class="form-group">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
-          </div>
-
-          <div class="form-group">
-            <label for="data">Data:</label>
-            <input type="date" id="data" name="data" required>
-          </div>
-
-          <div class="form-group">
-            <label for="hora">Hora:</label>
-            <input type="time" id="hora" name="hora" required>
-          </div>
-
-          <div class="form-group">
-            <label for="servico">Serviço:</label>
-            <select id="servico" name="servico" required>
-              <option value="">Selecione</option>
-              <option value="Corte Degradê">Corte Degradê</option>
-              <option value="Barba Completa">Barba Completa</option>
-              <option value="Corte Social">Corte Social</option>
-              <option value="Pacote Corte + Barba">Pacote Corte + Barba</option>
-            </select>
-          </div>
-
-          <button type="submit">Agendar</button>
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agendamento - Barbearia Top Style</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="Javascript.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container" style="text-align: center">
+        <div class="logo" style="margin: 0 auto">
+          <img
+            src="./Imagens/logo.png"
+            alt="Logo Barbearia Top Style"
+            style="width: 80px"
+          />
+        </div>
+        <h1 style="margin: 10px 0">Mauro Cortes</h1>
       </div>
-    </section>
-  </main>
+      <div style="text-align: center; margin: 10px">
+        <button
+          id="dark-mode-toggle"
+          style="padding: 10px 20px; cursor: pointer"
+        >
+          Modo Escuro
+        </button>
+      </div>
+      <nav>
+        <ul
+          style="
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <li>
+            <a href="index.html" style="text-decoration: none">Sobre Nós</a>
+          </li>
+          <li>
+            <a href="contact.html" style="text-decoration: none">Agendamento</a>
+          </li>
+          <li>
+            <a href="catalog.html" style="text-decoration: none">Catálogo</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Barbearia Top Style - Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    <main>
+      <section class="agendamento">
+        <div class="container">
+          <h2 style="color: black">Agende seu horário</h2>
+          <form id="form-agendamento">
+            <div class="form-group">
+              <label for="nome" style="color: black">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
 
-</body>
+            <div class="form-group">
+              <label for="telefone" style="color: black">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="data" style="color: black">Data:</label>
+              <input type="date" id="data" name="data" required />
+            </div>
+
+            <div class="form-group">
+              <label for="hora" style="color: black">Hora:</label>
+              <input type="time" id="hora" name="hora" required />
+            </div>
+
+            <div class="form-group">
+              <label for="servico" style="color: black">Serviço:</label>
+              <select id="servico" name="servico" required>
+                <option value="" style="color: black">Selecione</option>
+                <option value="Corte Degradê" style="color: black">
+                  Corte Degradê
+                </option>
+                <option value="Barba Completa" style="color: black">
+                  Barba Completa
+                </option>
+                <option value="Corte Social" style="color: black">
+                  Corte Social
+                </option>
+                <option value="Pacote Corte + Barba" style="color: black">
+                  Pacote Corte + Barba
+                </option>
+              </select>
+            </div>
+
+            <button type="submit" style="color: rgb(0, 0, 0)">Agendar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Barbearia Top Style - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
 </html>

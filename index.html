@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Barbearia Top Style</title>
+    <title>Mauro Cortes</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="Javascript.js"></script>
   </head>
   <body>
-    <header>
+    <header style="position: relative;">
       <div class="container" style="text-align: center">
         <div class="logo" style="margin: 0 auto">
           <img
@@ -17,6 +18,9 @@
           />
         </div>
         <h1 style="margin: 10px 0">Mauro Cortes</h1>
+      </div>
+      <div style="text-align: center; margin: 10px;">
+        <button id="dark-mode-toggle" style="padding: 10px 20px; cursor: pointer;">Modo Escuro</button>
       </div>
       <nav>
         <ul
@@ -34,7 +38,7 @@
             <a href="index.html" style="text-decoration: none">Sobre Nós</a>
           </li>
           <li>
-            <a href="contact.html" style="text-decoration: none">Contato</a>
+            <a href="contact.html" style="text-decoration: none">Agendamento</a>
           </li>
           <li>
             <a href="catalog.html" style="text-decoration: none">Catálogo</a>
@@ -43,8 +47,7 @@
       </nav>
     </header>
 
-    <section
-      style="
+    <section class="banner" style="
         position: relative;
         text-align: center;
         color: white;
@@ -55,10 +58,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-      "
-    >
+      ">
       <img
-        src="./Imagens/banner.jpg"
+        img src="./Imagens/banner.jpg" 
         alt="Banner Barbearia Top Style"
         style="
           width: 100%;
@@ -84,18 +86,11 @@
           margin: 20px auto;
           box-shadow: 0 4px 8px rgba(219, 202, 202, 0.082)
         "
-      >
-        <header
-          style="
-        background-color: #000000;
-        color: #ffffff;
-        padding: 10px;
-        border-radius: 8px 8px 0 0;
-        text-align: center;
-          "
+      
+        
         >
           <h2 style="margin: 0; font-size: 1.8rem;">Sobre Nós</h2>
-        </header>
+
         <div class="container" style="text-align: center; padding-top: 15px;">
           <article style="line-height: 1.6; color: #555; font-size: 1rem;">
 
@@ -114,47 +109,66 @@
         </div>
       </section>
 
-      <section class="destaques">
-        <div class="container">
-          <h2>Por que escolher a Top Style?</h2>
-          <div class="grid-destaques">
-            <div class="destaque-item">
-              <h3>Barbeiros Especialistas</h3>
-              <p>
-                Profissionais atualizados nas últimas tendências de cortes e
-                barbas.
-              </p>
-            </div>
-            <div class="destaque-item">
-              <h3>Ambiente Premium</h3>
-              <p>
-                Espaço confortável, climatizado, com música e bebidas para sua
-                experiência ser completa.
-              </p>
-            </div>
-            <div class="destaque-item">
-              <h3>Atendimento VIP</h3>
-              <p>
-                Tratamos cada cliente como único, com hora marcada e
-                pontualidade britânica.
-              </p>
-            </div>
+      <section class="destaques" style="border: 2px solid #000000; border-radius: 10px; padding: 20px; background-color: #ffffff; max-width: 700px; margin: 20px auto; box-shadow: 0 4px 8px rgba(78, 49, 49, 0.1);">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+          <h2 style="margin-bottom: 20px;">Por que escolher a Top Style?</h2>
+          <div class="grid-destaques" style="display: flex; flex-direction: column; gap: 20px;">
+        <div class="destaque-item" style="display: flex; align-items: center; gap: 15px;">
+            <div>
+            <h3 style="margin: 0; color: black;">Barbeiros Especialistas</h3>
+            <p style="margin: 5px 0 0; color: black;">
+            Profissionais atualizados nas últimas tendências de cortes e
+            barbas.
+            </p>
+          </div>
+        </div>
+        <div class="destaque-item" 
+        style="display: flex; align-items: center; gap: 15px;">
+          <div>
+            <h3 style="margin: 0; color: black;">Ambiente Premium</h3>
+              <p style="margin: 5px 0 0; color: black;">
+            Espaço confortável, climatizado, com música e bebidas para sua
+            experiência ser completa.
+            </p>
+          </div>
+        </div>
+        <div class="destaque-item" 
+        style="display: flex; align-items: center; gap: 15px;">
+            <div>
+            <h3 style="margin: 0; color: black;">Atendimento VIP</h3>
+            <p style="margin: 5px 0 0; color: black;">
+            Tratamos cada cliente como único, com hora marcada e
+            pontualidade britânica.
+            </p>
+          </div>
+        </div>
           </div>
         </div>
       </section>
 
-      <section class="localizacao">
-        <div class="container">
-          <h2>Onde Estamos</h2>
-          <article>
-            <p>📍 Rua Estilo de Vida, 123 - Bairro Moderno - Sua Cidade/SP</p>
+          <section class="local" 
+            style="text-align: center; margin: 20px auto; max-width: 700px; border: 2px solid #000000; border-radius: 10px; padding: 20px; background-color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); color: black;">
+            <h2 style="margin-bottom: 10px;">Local</h2>
+            <p>📍 364 R. Jorn. Regina Célia Santana Dias, ao lado do Comercial 3Hammer</p>
             <p>⏰ Atendimento: Segunda a Sábado das 9h às 20h</p>
-            <p>📞 Telefone: (11) 99999-9999</p>
-          </article>
-        </div>
-      </section>
-    </main>
+            <p>📞 Telefone: (+55) 71 99184-6150</p>
+            </section>
 
+        <div class="map" style="display: flex; justify-content: center;">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1745765751234!6m8!1m7!1sLZvRDE-K3h16Q8cSsTDqKg!2m2!1d-12.93206276156875!2d-38.41719516892842!3f122.543196665944
+            04!4f1.6272176019824798!5f0.7820865974627469" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
+        </div>
+        </section>
+          </section>
+          
     <footer>
       <div class="container">
         <p>&copy; 2025 Barbearia Top Style - Todos os direitos reservados.</p>
