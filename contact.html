@@ -108,5 +108,18 @@
         <p>&copy; 2025 Barbearia Mauro cortes - Todos os direitos reservados.</p>
       </div>
     </footer>
+    <button class="acessibilidade" onclick="aumentarFonte()">Aumentar Fonte</button>
+      
+    <script>
+      function aumentarFonte() {
+        const elementos = document.querySelectorAll('h1, h2, h3, p');
+        elementos.forEach(elemento => {
+          elemento.style.fontSize = (parseFloat(getComputedStyle(elemento).fontSize) + 15) + 'px';
+        });
+      }
+  
+  
+    </script>
+    
   </body>
 </html>
